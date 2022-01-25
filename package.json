@@ -1,0 +1,26 @@
+{
+  "name": "papa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NODE",
+    "MICROSERVICES"
+  ],
+  "author": "EMMANUEL KIPCHIRCHIR LANGAT",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.7.2",
+    "typeorm": "^0.2.41"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "@types/nodemailer": "^6.4.4",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
