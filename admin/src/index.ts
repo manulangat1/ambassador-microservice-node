@@ -6,8 +6,9 @@ import { createConnection } from 'typeorm';
 import cookieParser from 'cookie-parser';
 import "reflect-metadata";
 
-
 dotenv.config()
+
+import { producer } from './modules/kafka/config'
 
 import modules from './modules'
 
@@ -15,7 +16,7 @@ import modules from './modules'
 createConnection().then(db => {
     const PORT = process.env.PORT
     const app:Application = express();
-
+    producer.connect()
     app.use(cookieParser())
     app.use(cors())
     app.use(express.json())
